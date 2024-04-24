@@ -1,0 +1,28 @@
+{
+  "name": "stop-flickering",
+  "version": "1.0.0",
+  "description": "This plugin is used to manipulate the AndroidManifest.xml.",
+  "cordova": {
+    "id": "stop-flickering",
+    "platforms": [
+      "android"
+    ]
+  },
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=10.0.0"
+    },
+    {
+      "name": "android-sdk",
+      "version": ">=31"
+    },
+    {
+      "name": "apple-ios",
+      "version": ">=8.0"
+    }
+  ],
+  "author": "Aurelio dos Santos Junior",
+  "license": "MIT",
+  "dependencies": {}
+}
