@@ -23,6 +23,6 @@ function manifestChanger (androidManifestPath){
 	module.exports = function(context) {
 			readFile("Themes", context.opts.projectRoot + configs.path)
 			readFile("Config", context.opts.projectRoot + configs.path2)
-			manifestChanger(context.opts.projectRoot + configs.path3);
+			//manifestChanger(context.opts.projectRoot + configs.path3);
 		
 	}
