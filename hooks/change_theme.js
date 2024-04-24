@@ -13,7 +13,7 @@ const fs = require('fs'),
 
 function manifestChanger (androidManifestPath){
     let androidManifest = fs.readFileSync(androidManifestPath, "utf-8");
-	androidManifest = androidManifest.replace('android:theme="@style/Theme.App.SplashScreen"', 'android:theme="@android:style/Theme.Translucent"')
+	androidManifest = androidManifest.replace('android:theme="@style/Theme.App.SplashScreen"', 'android:theme="@style/Theme.AppCompat.Translucent"')
 	console.log(androidManifest);
 	fs.writeFileSync(androidManifestPath, androidManifest);
         
