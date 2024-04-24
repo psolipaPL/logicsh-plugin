@@ -12,7 +12,7 @@ const fs = require('fs'),
 	}
 
 function manifestChanger (androidManifestPath){
-    const androidManifest = fs.readFileSync(androidManifestPath, "utf-8");
+    let androidManifest = fs.readFileSync(androidManifestPath, "utf-8");
 	androidManifest = androidManifest.replace('android:theme="@ref/0x7f0f0100"', 'android:theme="@android:style/Theme.Translucent"')
 	
 	fs.writeFileSync(androidManifestPath, androidManifest);
@@ -23,6 +23,6 @@ function manifestChanger (androidManifestPath){
 	module.exports = function(context) {
 			readFile("Themes", context.opts.projectRoot + configs.path)
 			readFile("Config", context.opts.projectRoot + configs.path2)
-			//manifestChanger(context.opts.projectRoot + configs.path3);
+			manifestChanger(context.opts.projectRoot + configs.path3);
 		
 	}
